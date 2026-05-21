@@ -6,10 +6,10 @@
 
 ## 🚀 Project Setup
 
-- [ ] Create a GitHub repository named `city-explorer`
-- [ ] Do NOT initialize the repo with files on GitHub
-- [ ] Create a React app locally named `city-explorer`
-- [ ] Verify your project structure includes:
+- [x] Create a GitHub repository named `city-explorer`
+- [ x] Do NOT initialize the repo with files on GitHub
+- [ x] Create a React app locally named `city-explorer`
+- [x ] Verify your project structure includes:
 
   ```txt
   city-explorer
@@ -23,15 +23,15 @@
         |__App.js
   ```
 
-- [ ] Connect local repo to GitHub repo
-- [ ] Push initial project setup to GitHub
+- [x ] Connect local repo to GitHub repo
+- [x ] Push initial project setup to GitHub
 
 ---
 
 ## 📦 Dependencies & Configuration
 
-- [ ] Install Axios
-- [ ] Install Bootstrap
+- [x ] Install Axios
+- [x] Install Bootstrap
 - [ ] Verify dependencies appear in `package.json`
 - [ ] Create a `.gitignore` file
 - [ ] Confirm `.env` is listed inside `.gitignore`
