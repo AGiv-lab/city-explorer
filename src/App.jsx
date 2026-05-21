@@ -2,6 +2,7 @@
 // import { useState } from 'react';
 // import react from 'react';
 // import bootstrap from 'bootstrap', 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
