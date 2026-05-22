@@ -79,12 +79,12 @@ VITE_API_KEY=your_key_here
   ```
 
 - [x ] Capture user input with React state
-- [ ] Use Axios to request data from LocationIQ
-- [ ] Use async/await correctly
-- [ ] Display:
-  - [ ] Display name
-  - [ ] Latitude
-  - [ ] Longitude
+- [ x] Use Axios to request data from LocationIQ
+- [ x] Use async/await correctly
+- [ x] Display:
+  - [ x] Display name
+  - [x ] Latitude
+  - [x ] Longitude
 - [ ] Display the data using Bootstrap components
 - [ ] Verify valid searches work correctly
 
