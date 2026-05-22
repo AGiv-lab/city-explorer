@@ -13,14 +13,14 @@
 
   ```txt
   city-explorer
-     ├── .env
-     ├── .gitignore
-     ├── package-lock.json
-     ├── package.json
-     ├── README.md
-     ├── public/
-     └── src/
-        |__App.js
+     ├─x─ .env
+     ├x── .gitignore
+     ├─x─ package-lock.json
+     ├─x─ package.json
+     ├x── README.md
+     ├─x─ public/
+     └x── src/
+        |_x_App.js
   ```
 
 - [x ] Connect local repo to GitHub repo
@@ -32,33 +32,33 @@
 
 - [x ] Install Axios
 - [x] Install Bootstrap
-- [ ] Verify dependencies appear in `package.json`
-- [ ] Create a `.gitignore` file
-- [ ] Confirm `.env` is listed inside `.gitignore`
-- [ ] Verify `.env` is NOT uploaded to GitHub
+- [ x] Verify dependencies appear in `package.json`
+- [ x] Create a `.gitignore` file
+- [ x] Confirm `.env` is listed inside `.gitignore`
+- [ x] Verify `.env` is NOT uploaded to GitHub
 
 ---
 
 ## 🔑 LocationIQ API Setup
 
-- [ ] Create a free LocationIQ account
-- [ ] Open the API Access Tokens page
-- [ ] Rename your token label to:
+- [x ] Create a free LocationIQ account
+- [x ] Open the API Access Tokens page
+- [ x] Rename your token label to:
 
   ```txt
   City Explorer
   ```
 
-- [ ] Add your localhost URL as an HTTP Referrer
+- [x ] Add your localhost URL as an HTTP Referrer
 
   ```txt
   http://localhost:5173
   ```
 
-- [ ] Add your deployed Netlify URL as an HTTP Referrer
-- [ ] Create a `.env` file locally
-- [ ] Add your API key to `.env`
-- [ ] Use the SAME variable name everywhere
+- [ x] Add your deployed Netlify URL as an HTTP Referrer
+- [ x] Create a `.env` file locally
+- [x ] Add your API key to `.env`
+- [ x] Use the SAME variable name everywhere
 
 Example:
 
@@ -70,15 +70,15 @@ VITE_API_KEY=your_key_here
 
 ## 🌎 Location Search Feature
 
-- [ ] Build a form for city searches
-- [ ] Add an input field for city names
-- [ ] Add a button with the text:
+- [ x] Build a form for city searches
+- [x ] Add an input field for city names
+- [x ] Add a button with the text:
 
   ```txt
   Explore!
   ```
 
-- [ ] Capture user input with React state
+- [x ] Capture user input with React state
 - [ ] Use Axios to request data from LocationIQ
 - [ ] Use async/await correctly
 - [ ] Display:
