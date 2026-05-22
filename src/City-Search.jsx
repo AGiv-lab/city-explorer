@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -34,18 +35,28 @@ function CitySearch() {
           Explore!
         </button>
       </form>
-      
+
        {location && (
-        <div>
+  <div className="card mt-4">
 
-          <h2>{location.display_name}</h2>
+    <div className="card-body">
 
-          <p>Latitude: {location.lat}</p>
+      <h2 className="card-title">
+        {location.display_name}
+      </h2>
 
-          <p>Longitude: {location.lon}</p>
+      <p className="card-text">
+        Latitude: {location.lat}
+      </p>
 
-        </div>
-      )}
+      <p className="card-text">
+        Longitude: {location.lon}
+      </p>
+
+    </div>
+
+  </div>
+)}
 
     </div>
   );
