@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios'; //imports the axios library for making HTTP requests
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Weather from './Weather';
  
  
 // Importing API key
@@ -10,6 +11,7 @@ function App() {
 // States and setStates for search query and location data
   const [searchQuery, setSearchQuery] = useState('');
   const [location, setLocation] = useState({});
+  const [weather, setWeather] = useState([]);
  
   async function getLocation() {
  
@@ -47,18 +49,21 @@ function App() {
             src={mapUrl}
             alt="Map of city"
           />
- 
- 
+          
+          
           <h2>{location.display_name}</h2>
  
           <p>Latitude: {location.lat}</p>
  
           <p>Longitude: {location.lon}</p>
+          
+          <Weather weather={weather} />
  
         </div>
       )}
  
     </div>
+    
   );
 }
  
