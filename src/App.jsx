@@ -13,15 +13,21 @@ function App() {
   const [location, setLocation] = useState({});
   const [weather, setWeather] = useState([]);
  
-  async function getLocation() {
- 
-      const API = `https://us1.locationiq.com/v1/search.php?key=${API_KEY}&q=${searchQuery}&format=json`;
- 
-      const response = await axios.get(API);
- 
-      setLocation(response.data[0]);
-  }
- 
+  
+async function getLocation() {
+  const API = `https://us1.locationiq.com/v1/search.php?key=${API_KEY}&q=${searchQuery}&format=json`;
+
+  const response = await axios.get(API);
+
+  setLocation(response.data[0]);
+
+  const weatherResponse = await axios.get(
+    `http://localhost:3001/weather?searchQuery=${searchQuery}`
+  );
+
+  setWeather(weatherResponse.data);
+}
+
   const mapUrl =
     location.lat && location.lon
       ? `https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}&zoom=10`
